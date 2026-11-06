@@ -16,7 +16,7 @@ export const site = {
   description:
     "A Higgsfield style AI video and image creation UI. Generation is simulated - results come from a library of free stock clips.",
   url: siteUrl,
-  repo: "https://github.com/PriyanshuThakur/video-arena",
+  repo: "https://github.com/PriyanshuThakur10/video-arena",
   /** Plain-words explanation of the demo, used by the nav pill and the footer. */
   demoNote:
     "Generation here is simulated. Results come from a library of free stock clips and images, nothing is sent to any model, and your library only lives in this browser.",

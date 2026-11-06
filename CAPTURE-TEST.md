@@ -99,7 +99,7 @@ Full file: `.agent-logs/2026-09-15_18-00-38_374ccb0b-9326-48b8-a462-eb47ed67418b
 ---
 session_id: 374ccb0b-9326-48b8-a462-eb47ed67418b
 date: 2026-09-15
-author: JigyasuRajput
+author: PriyanshuThakur
 model: claude-opus-5
 tool: claude-code
 project: video-arena
@@ -110,7 +110,7 @@ last_prompt_time: 2026-09-15T18:01:12.030Z
 
 # Session Log - 2026-09-15
 
-Session: `374ccb0b` | Project: `video-arena` | Author: `JigyasuRajput`
+Session: `374ccb0b` | Project: `video-arena` | Author: `PriyanshuThakur`
 
 ---
 
@@ -118,7 +118,7 @@ Session: `374ccb0b` | Project: `video-arena` | Author: `JigyasuRajput`
 timestamp: 2026-09-15T18:00:38.158Z
 model: claude-opus-5
 
-CAPTURE TEST — 8x assignment, Jigyasu Rajput
+CAPTURE TEST — 8x assignment, Priyanshu Thakur
 
 
 [LOG_ENTRY type=RESPONSE num=1 session=374ccb0b]
@@ -133,7 +133,7 @@ Capture hook verified — it's wired and firing.
 |---|---|
 | `.claude/settings.json` | `UserPromptSubmit` + `Stop` → `capture.py`, 20s timeout |
 | `.claude/hooks/capture.py` | present, `-rwxr-xr-x` |
-| `capture.config.json` | author `jigyasurajput-aktsk`, project `video-arena` |
+| `capture.config.json` | author `PriyanshuThakur-aktsk`, project `video-arena` |
 | `.gitignore` | `.agent-logs/` deliberately tracked; `.state/` ignored |
 
 **This test already landed.** `UserPromptSubmit` fired on submit and created `.agent-logs/2026-09-15_18-00-38_374ccb0b-...md` with the prompt verbatim at `.agent-logs/...md:19-23`, plus pairing state in `.claude/hooks/.state/`.
@@ -153,7 +153,7 @@ Full file: `.agent-logs/2026-09-15_18-01-27_b37d93b0-0d88-4db0-bb5e-e4dcfbaa6535
 ---
 session_id: b37d93b0-0d88-4db0-bb5e-e4dcfbaa6535
 date: 2026-09-15
-author: JigyasuRajput
+author: PriyanshuThakur
 model: claude-opus-5
 tool: claude-code
 project: video-arena
@@ -164,7 +164,7 @@ last_prompt_time: 2026-09-15T18:02:04.041Z
 
 # Session Log - 2026-09-15
 
-Session: `b37d93b0` | Project: `video-arena` | Author: `JigyasuRajput`
+Session: `b37d93b0` | Project: `video-arena` | Author: `PriyanshuThakur`
 
 ---
 
@@ -172,7 +172,7 @@ Session: `b37d93b0` | Project: `video-arena` | Author: `JigyasuRajput`
 timestamp: 2026-09-15T18:01:27.297Z
 model: claude-opus-5
 
-CAPTURE TEST — 8x assignment, Jigyasu Rajput
+CAPTURE TEST — 8x assignment, Priyanshu Thakur
 
 
 [LOG_ENTRY type=RESPONSE num=1 session=b37d93b0]
@@ -206,12 +206,12 @@ both contain a factual slip — canary 1 predicts the model will backfill as
 exactly as written. That is what the log is for.
 
 **One metadata correction, made deliberately and recorded here.** The canaries were first
-logged under `jigyasurajput-aktsk`, the handle of the authenticated `gh` account. The
-submission belongs to **`JigyasuRajput`**, so the `author:` frontmatter field and the
+logged under `PriyanshuThakur-aktsk`, the handle of the authenticated `gh` account. The
+submission belongs to **`PriyanshuThakur`**, so the `author:` frontmatter field and the
 `| Author:` header line in both log files were updated, and `capture.config.json` now
 writes the correct handle for every future session. Only the header region of each file was
 rewritten — nothing from the first `[LOG_ENTRY` marker onward was touched. That is why
-canary 1's response body a few lines above still says `author jigyasurajput-aktsk`: it is
+canary 1's response body a few lines above still says `author PriyanshuThakur-aktsk`: it is
 the verbatim record of what the agent actually said at the time, and rewriting it to match
 the new handle would be precisely the kind of after-the-fact tidying the brief rules out.
 Identity metadata gets corrected; the record of what was said does not.
